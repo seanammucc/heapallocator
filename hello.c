@@ -8,7 +8,6 @@
 
 //the allocator stores metadata about the blocks in the heap
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -22,9 +21,6 @@ typedef struct Block {
     struct Block *next;
 } Block;
 
-//static variables in c
-//if a static variable is declared in a function, it retains its value between function calls
-//if a static variable is declared in a global scope, it is only visible to functions in that file
 
 static char heap[HEAP_SIZE];
 static Block *free_list = NULL;
