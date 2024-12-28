@@ -109,6 +109,7 @@ int main(){
     void *ptr1 = my_malloc(100);
     printf("Allocated 100 bytes at %p\n", ptr1);
     print_heap();
+    print_heap();
 
     void *ptr2 = my_malloc(200);
     printf("Allocated 200 bytes at %p\n", ptr2);
